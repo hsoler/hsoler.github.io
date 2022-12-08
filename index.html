@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/styles.css" rel="stylesheet"/>
+        
+    </head>
+    <body>
+        <p id="dummy"></p>
+        <header>
+            <h1 id="titulo">Trabalho de ADM Operações - Gêmeos Digitais</h1>
+            <nav id="sumario">
+                <a href=#introducao id="a-introducao">Introdução</a>
+                ---
+                <a href=#estudo-de-caso id="a-estudo-de-caso">Estudo de Caso</a>
+                ---
+                <a href=#implementacao id="a-implementacao">Implementações</a>
+                ---
+                <a href=#referencias id="a-referencias">Referências</a>
+            </nav>
+        </header>
+        <div id="introducao">
+            <img src="images/dt_capa.png" id="capa-do-trabalho"/>
+            <h1>Para começar: O que é um gêmeo digital?</h1>
+            <div id="text-plus-glossary">
+                <p id="only-text">
+                    De acordo com a Digital Twin Consortium, "um gêmeo digital é uma representação virtual de processos e entidades do mundo real, sincronizados a uma frequência específica e com certa fidelidade". Em outros termos, o GD é uma integração entre diferentes tecnologias da Revolução 4.0 (<button class ="clickable" id="b-cax">CAx</button>,
+                    <button class ="clickable" id="b-big-data">Big Data</button>,
+                    <button class="clickable" id="b-iot">IoT</button>,
+                    <button class="clickable" id="b-ai">AI</button>,
+                    <button class ="clickable" id="b-automacao">Automação</button>) que tem por objetivo construir cópias virtuais dos elementos pertinentes à fábrica com o intuito de monitorar, controlar e analisar cenários reais, bem como simular cenários plausíveis.
+                </p>
+                <div id="glossary">
+                    <p id="x-button"><button class="clickable">X</button></p>
+                    <h1 class="h-glossary">Glossário</h1>
+                    <p class="p-glossary" id="p-cax">
+                        CAx (computer-aided technologies) se refere ao uso de tecnologia computacional para auxiliar na visualização, análise e desenho de produtos e processos na indústria. São exemplos de CAx: softwares de análise estatística, modelagem tridimensional, automação celular, etc.
+                    </p>
+                    <p class="p-glossary" id="p-big-data">
+                        Big Data se refere a um conjunto de tecnologias especializadas na coleta, processamento, armazenamento e acesso  de grandes volumes de dados.
+                    </p>
+                    <p class="p-glossary" id="p-iot">
+                        IoT (internet of things) se refere ao uso de tecnologias provedoras de interconectividade entre diferentes objetos do mundo real, possibilitando o acesso a dados gerados em tempo real e bancos de dados nesses objetos e envio de dados a partir de um computador central, com o intuito de ajudar ou controlar a execução de seus processos.
+                    </p>
+                    <p class="p-glossary" id="p-ai">
+                        AI (artificial intelligence) se refere ao uso de técnicas matemáticas potencializadas pelo uso de tecnologias computacionais para aferição de causalidade entre variáveis e tomada de decisão ótima. São exemplos de inteligências artificiais: modelos de regressão linear múltipla (MLR), árvores de decisão, redes neurais artificiais (ANN), etc.
+                    </p>
+                    <p class="p-glossary" id="p-automacao">
+                        Automação se refere a um conjunto de técnicas de controle que, a partir do acesso a variáveis de um sistema, determinam e implementam cursos de ação a serem seguidos pelos seus objetos.
+                    </p>
+                </div>
+            </div>
+            <div class="scrollable-window">
+                <button class="clickable scroll-butt" id="b-left">«</button>
+                <div class="window-container">
+                    <img src="images/im0.png" class = "scr-wind" id="im0"/>
+                    <img src="images/im1.png" class = "scr-wind" id="im1"/>
+                    <img src="images/im2.png" class = "scr-wind" id="im2"/>
+                    <img src="images/im3.png" class = "scr-wind" id="im3"/>
+                    <img src="images/im4.png" class = "scr-wind" id="im4"/>
+                </div>
+                <button class="clickable scroll-butt" id="b-right">»</button>
+            </div>
+            <button class="mais-info clickable" id="mais-info-gemeos">
+                Mostrar mais informações sobre gêmeos digitais:
+            </button>
+        </div>
+        <div id="mais-gemeos" class="expandido">
+            <p>
+                Para Kritzinger et al (2018), o termo "gêmeo digital" passou a abranger um número muito grande de modelos de virtualização da realidade, e propõem a classificação dos gêmeos digitais em três subcategorias:
+            </p>
+            <div id="subcategorias-de-gemeo-digital">
+                <div class="subcategory-box" id="modelo-digital">
+                    <h1 class="titulosubcategoria">Modelo Digital</h1>
+                    <img src="images/dtmodelodigital.png" class="imagem-c"/>
+                    <p class="textosubcategoria">
+                        O Modelo Digital (DM) é um gêmeo digital em que não há intercâmbio de dados entre o sistema real e o sistema virtual. Por exemplo, simulações de fábricas que ainda não entraram em operação.
+                    </p>
+                </div>
+                <div class="subcategory-box" id="sombra-digital">
+                    <h1 class="titulosubcategoria">Sombra Digital</h1>
+                    <img src="images/dtsombradigital.png" class="imagem-c"/>
+                    <p class="textosubcategoria">
+                        Na Sombra Digital (DS), existe o envio de informações automatizado de um sistema para o outro, mas não vice-versa. Por exemplo, a virtualização de filas de clientes num estabelecimento comercial.
+                    </p>
+                </div>
+                <div class="subcategory-box" id="gemeo-digital">
+                    <h1 class="titulosubcategoria">Gêmeo Digital</h1>
+                    <img src="images/dtgemeodigital.png" class="imagem-c"/>
+                    <p class="textosubcategoria">
+                        No Gêmeo Digital (DT), ocorre o fluxo contínuo e automatizado de informações entre ambos os sistemas, de modo que alterações em um provoca alterações no outro.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="estudo-de-caso">
+            <h1>Estudo de caso: Implementação de GDs em uma unidade de craqueamento fluidico catalizado (FCC) no Brasil</h1>
+            <p>
+                Quinalha (2018) traz para a gente o caso de uma implementação de gêmeos digitais na indústria brasileira. No caso estudado, uma refinaria de petróleo implementa o System1, software proprietário de gêmeos digitais, em sua unidade de craqueamento catalítico fluidizado, estação de transformação do petróleo bruto em derivados, no seu equipamento soprador de ar, responsável por reabastecer a unidade com ar para catalisar a reação transformadora. Este equipamento, segundo o autor, é parte vital nos processos da refinaria, funciona em tempo integral e sua parada não programada pode lhe causar prejuízo financeiro na casa dos milhões. Graças à implementação do gêmeo digital, a empresa foi capaz de prever uma falha nesse equipamento, descobrir a sua causa e remediá-la, impedindo sua parada.
+            </p>
+            <div class="scrollable-window">
+                <button class="clickable scroll-butt" id="b-left0">«</button>
+                <div class="window-container">
+                    <img src="images/im00.png" class = "scr-wind" id="im00"/>
+                    <img src="images/im01.png" class = "scr-wind" id="im01"/>
+                    <img src="images/im02.png" class = "scr-wind" id="im02"/>
+                    <img src="images/im03.png" class = "scr-wind" id="im03"/>
+                    <img src="images/im04.png" class = "scr-wind" id="im04"/>
+                    <img src="images/im05.png" class = "scr-wind" id="im05"/>
+                    <img src="images/im06.png" class = "scr-wind" id="im06"/>
+                    <img src="images/im07.png" class = "scr-wind" id="im07"/>
+                    <img src="images/im08.png" class = "scr-wind" id="im08"/>
+                    <img src="images/im09.png" class = "scr-wind" id="im09"/>
+                </div>
+                <button class="clickable scroll-butt" id="b-right0">»</button>
+            </div>
+            <button class="mais-info clickable" id="mais-info-caso">
+                Mostrar caso em maiores detalhes:
+            </button>
+            <div id="caso-petroquimica" class="expandido">
+                <p>
+                    Para permitir a inspeção da máquina sem que fossem necessárias paradas para manutenção, os engenheiros da refinaria adotaram e implementaram o System1, software proprietário de gêmeos digitais que coleta dados em tempo real de objetos físicos, a partir de sensores implantados e conectados a aparelhos receptores, e disponibiliza esses dados tanto em tempo real, para monitoramento e controle dos objetos, quanto em séries históricas, para sua análise. O sistema foi implementado em 2004 e, em 2017, apenas dois após sua última parada para manutenção programada, o gêmeo digital começou a alertar sobre riscos de falha.
+                </p>
+                <p>
+                    Os engenheiros responsáveis formularam 13 hipóteses da razão do apontamento da falha, dos quais os 3 primeiros acusavam o System1 e de falha e, o restante, o próprio soprador de ar.
+                </p>
+                <ul>
+                    <li>
+                        Deslocamento da base de fixação dos sensores de proximidade 1A e 1B;
+                    </li>
+                    <li>
+                        Perda de sensibilidade dos sensores;
+                    </li>
+                    <li>
+                        Falha de calibração (ajuste de zero) dos sensores;
+                    </li>
+                    <li>
+                        Erro de montagem no acoplamento entre turbina e soprador;
+                    </li>
+                    <li>
+                        Desalinhamento da caixa de mancal;
+                    </li>
+                    <li>
+                        Deposição de sílica nas palhetas da turbina;
+                    </li>
+                    <li>
+                        Montagem invertida das sapatas do mancal;
+                    </li>
+                    <li>
+                        Desgaste entre componentes de escora do mancal;
+                    </li>
+                    <li>
+                        Porca de escora do mancal se soltando;
+                    </li>
+                    <li>
+                        Desgaste entre as sapatas e caixas dos mancais;
+                    </li>
+                    <li>
+                        Desgaste nos calças do mancal de escora;
+                    </li>
+                    <li>
+                        Falha no material utilizado nas sapatas;
+                    </li>
+                    <li>
+                        Erosão metálica causada por partículas presentes no óleo de lubrificação
+                    </li>
+                </ul>
+                <p>
+                    Após uma parada breve para manutenção, apelidada "pit stop", feita apenas para inspeção visual interna do equipamento, foram descartadas as hipóteses a, b, c, d, e, f, g e n, sobrando apenas as hipóteses h, i, j, l e m. Com o soprador de ar de volta ao seu funcionamento padrão, os engenheiros passaram então a realizar leves perturbações no equipamento, e.g. variações na temperatura ambiente, e medir os resultados nas suas variáveis internas mensuradas em tempo real pelo System1. A partir desses testes, eles conseguiram determinar a causa correta do problema, e ainda por meio deste sistema determinaram uma solução provisória para prolongar a validade da máquina até a realização de outra parada em 2018.
+                </p>
+            </div>
+        </div>
+        <div id="implementacao">
+            <h1>E aí, como faço para implementar um gêmeo digital?</h1>
+            <p>
+                O gêmeo digital é uma tecnologia de sistema inegrado. Para implementá-lo em uma companhia (e alavancar seu potencial gerador de valor), é necessária a implementação de subsistemas, o que inclui as tecnologias de CAx, Big Data, IoT, AI e Automação citadas anteriormente. Dentre outras soluções disponíveis, Rolle (2019) desenvolveu uma arquitetura de gêmeos digitais, aberta ao público, que pode ser utilizada como pontapé para o desenvolvimento de um software customizado às necessidades da sua empresa.
+            </p>
+            <div class="scrollable-window">
+                <button class="clickable scroll-butt" id="b-left00">«</button>
+                <div class="window-container">
+                    <img src="images/im000.png" class = "scr-wind" id="im000"/>
+                    <img src="images/im001.png" class = "scr-wind" id="im001"/>
+                    <img src="images/im002.png" class = "scr-wind" id="im002"/>
+                    <img src="images/im003.png" class = "scr-wind" id="im003"/>
+                    <img src="images/im004.png" class = "scr-wind" id="im004"/>
+                    <img src="images/im005.png" class = "scr-wind" id="im005"/>
+                    <img src="images/im006.png" class = "scr-wind" id="im006"/>
+                </div>
+                <button class="clickable scroll-butt" id="b-right00">»</button>
+            </div>
+            <button class="mais-info clickable", id="mais-info-implementacao">
+                Exemplos de implementação de gêmeos digitais:
+            </button>
+            <div id="mais-implementacao"></div>
+        </div>
+        <div id="referencias">
+            <h1>Referências e leituras adicionais</h1>
+            <ul id="referencias-lista">
+                <li>
+                    <a href="https://www.digitaltwinconsortium.org">
+                        Página Oficial do Digital Twin Consortium
+                    </a>
+                    <p>O Digital Twin Consortium é uma organização dedicada a divulgar e desenvolver tecnologias de gêmeos digitais para favorecer sua aplicação na indústria. Dentre outros recursos, eles disponibilizam definições, glossários, artigos e softwares de uso livre, além de uma "capabilities periodic table", que tem o intuito de guiar o desenho e implementação de gêmeos digitais pelas empresas.</p>
+                </li>
+                <li>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2405896318316021">
+                        Digital Twin in manufacturing: A categorical literature review and classification
+                    </a>
+                    <p>
+                        Este artigo de Kritzinger et al (2018) é uma revisão categórica da literatura e introduz um modelo de classificação dos gêmeos digitais em "modelos digitais", "sombras digitais" e "gêmeos digitais".
+                    </p>
+                </li>
+                <li>
+                    <a href="https://riut.utfpr.edu.br/jspui/handle/1/19971">
+                        Gêmeos Digitais: O Futuro da Indústria 4.0
+                    </a>
+                    <p>
+                        Esta dissertação de mestrado de Quinalha (2018) apresenta um estudo de caso da implementação de um software de gêmeos digitais, o system1, numa unidade de craqueamento fluidico catalizado de uma refinaria brasileira.
+                    </p>
+                </li>
+                <li>
+                    <a href="https://repositorio.unesp.br/handle/11449/183651">
+                        Arquitetura Para Construção de Gêmeos Digitais com Foco na Indústria 4.0</a>
+                    <p>
+                        Nesta dissertação de mestrado, Rolle (2019) desenvolve uma arquitetura aberta (open architecture) de software de gêmeos digitais, que pode ser utilizada para agilizar o processo de desenvolvimento de futuros softwares de gêmeos digitais.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <button id="x-scroll-button" class="clickable">X</button>
+        <button id="global-l-button" class ="clickable scroll-butt">«</button>
+        <button id="global-r-button" class="clickable scroll-butt">»</button>
+        <script src="scripts/glossary.js"></script>
+        <script src="scripts/scroll-window.js"></script>
+    </body>
+</html>
